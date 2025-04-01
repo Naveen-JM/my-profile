@@ -1,0 +1,60 @@
+/* src/Navbar.css */
+
+/* General styles for the navbar */
+.navbar {
+    background: rgb(34,193,195);
+background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%) !important; /* Dark background for the navbar */
+    padding: 1rem; /* Padding for the navbar */
+    border-radius: 0.5rem; /* Rounded edges */
+}
+
+/* Styles for the brand name */
+.navbar-brand {
+    font-weight: bold; /* Bold font for the brand */
+    font-size: 1.8rem; /* Larger font size for the brand */
+    color: #ffffff; /* White color for the brand text */
+}
+
+/* Styles for the nav links */
+.nav-link {
+    color: #ffffff; /* White color for the nav links */
+    font-size: 1.1rem; /* Font size for the nav links */
+    margin-right: 1rem; /* Space between nav links */
+}
+
+/* Change color on hover for nav links */
+.nav-link:hover {
+    color: #ffc107; /* Yellow color on hover */
+}
+
+/* Styles for the active nav link */
+.nav-link.active {
+    font-weight: bold; /* Bold font for the active link */
+    color: #ffc107; /* Yellow color for the active link */
+}
+
+/* Styles for the toggler button */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Light border for the toggler */
+}
+
+/* Change color of the toggler icon */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem; /* Less padding on smaller screens */
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem; /* Smaller font size for the brand on mobile */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Smaller font size for nav links on mobile */
+        margin-right: 0.5rem; /* Less space between nav links on mobile */
+    }
+}
