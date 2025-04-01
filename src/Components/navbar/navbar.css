@@ -2,8 +2,8 @@
 
 /* General styles for the navbar */
 .navbar {
-    background: rgb(34,193,195);
-    background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%) !important; /* Gradient background for the navbar */
+    background: rgb(63,94,251);
+background: linear-gradient(174deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)!important;
     padding: 1rem; /* Padding for the navbar */
     border-radius: 0.5rem; /* Rounded edges */
     margin-left: 15px; /* Add left margin for spacing */
@@ -17,7 +17,7 @@
     color: #ffffff; /* White color for the brand text */
 }
 .navbar-brand:hover {
-    color: #d5810c;
+    color: #000000;
 }
 /* Styles for the nav links */
 .nav-link {
