@@ -3,9 +3,11 @@
 /* General styles for the navbar */
 .navbar {
     background: rgb(34,193,195);
-background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%) !important; /* Dark background for the navbar */
+    background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%) !important; /* Gradient background for the navbar */
     padding: 1rem; /* Padding for the navbar */
     border-radius: 0.5rem; /* Rounded edges */
+    margin-left: 15px; /* Add left margin for spacing */
+    margin-right: 15px; /* Add right margin for spacing */
 }
 
 /* Styles for the brand name */
@@ -14,7 +16,9 @@ background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
     font-size: 1.8rem; /* Larger font size for the brand */
     color: #ffffff; /* White color for the brand text */
 }
-
+.navbar-brand:hover {
+    color: #100d04;
+}
 /* Styles for the nav links */
 .nav-link {
     color: #ffffff; /* White color for the nav links */
@@ -24,7 +28,7 @@ background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 
 /* Change color on hover for nav links */
 .nav-link:hover {
-    color: #ffc107; /* Yellow color on hover */
+    color: #100d04; /* Yellow color on hover */
 }
 
 /* Styles for the active nav link */
@@ -47,6 +51,8 @@ background: linear-gradient(190deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 10
 @media (max-width: 768px) {
     .navbar {
         padding: 0.5rem; /* Less padding on smaller screens */
+        margin-left: 10px; /* Adjust left margin for smaller screens */
+        margin-right: 10px; /* Adjust right margin for smaller screens */
     }
 
     .navbar-brand {
