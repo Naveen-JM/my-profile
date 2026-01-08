@@ -13,6 +13,11 @@
 .title {
   margin-top: 8px;
   font-size:clamp(0.95rem, 3vw, 1.05rem);
-  font-weight: 500;
+  font-weight: 700;
   color: #343539; /* cool gray */
+}
+.subtitle{
+  margin-top: 4px;
+  font-size:clamp(0.85rem, 2.5vw, 0.95rem);
+  color: #6b7280; /* warm gray */
 }
