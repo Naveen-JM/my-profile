@@ -1,0 +1,25 @@
+.skills {
+    margin-top: 80px;
+    padding: 0 16px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #111827;
+  }
+  
+ /*default tab and bigscreen*/ 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+  }
+  /*mobile*/
+  @media(max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+}
