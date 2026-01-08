@@ -1,0 +1,96 @@
+.education {
+    margin-top: 80px;
+    padding: 0 16px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 48px;
+    color: #111827;
+  }
+  
+  /* ===== Timeline container ===== */
+  .timeline {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto;
+    padding-left: 32px;
+  }
+  
+  /* vertical spine */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e5e7eb;
+  }
+  
+  /* ===== Entry ===== */
+  .entry {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+  
+  .entry:last-child {
+    padding-bottom: 0;
+  }
+  
+  /* dot */
+  .dot {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #111827;
+  }
+  
+  /* content */
+  .content {
+    margin-left: 24px;
+  }
+  
+  .year {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6b7280;
+  }
+  
+  .title {
+    margin: 6px 0 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .place {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #374151;
+  }
+  
+  .detail {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  /* ===== Tablet & up ===== */
+  @media (min-width: 768px) {
+    .timeline {
+      padding-left: 40px;
+    }
+  
+    .content {
+      margin-left: 32px;
+    }
+  }
+  
