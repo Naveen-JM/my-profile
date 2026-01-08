@@ -15,7 +15,7 @@ function Skills() {
     { name: "Python", icon: pythonIcon, level: 75 },
     { name: "Drupal", icon: drupalIcon, level: 70 },
     { name: "PHP", icon: phpIcon, level: 65 },
-    { name: "Acquia", icon: acquiaIcon, level: 60 },
+    { name: "Acquia Cloud", icon: acquiaIcon, level: 60 },
   ];
 
   return (
