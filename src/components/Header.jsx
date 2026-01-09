@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 
 const titles = [
-  "Supercalifragilisticexpalidicious",
-  "Innovative Problem Solver",
-  "Passionate Coder",
+  "Software Engineer",
+  "Information Technology Graduate",
+  "Passionate",
   "Tech Enthusiast",
   "Lifelong Learner",
 ];

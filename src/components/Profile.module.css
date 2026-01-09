@@ -62,10 +62,12 @@
   font-size: 0.95rem;
   line-height: 1.6;
   color: #4b5563; /* soft gray */
-
   /* subtle separation */
   padding-top: 8px;
-  text-align: left;
+  text-align: justify;
+}
+.bio:hover{
+  color: #111827; /* darker on hover */
 }
 /* tablet and up */
 @media (min-width: 768px) {

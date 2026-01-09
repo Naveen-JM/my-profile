@@ -6,13 +6,13 @@ function Education() {
       level: "10th",
       place: "Ryan International School",
       year: "2016 – 2017",
-      detail: "ICSE Board – 85% marks",
+      detail: "ICSE Board ",
     },
     {
       level: "12th",
       place: "Bharati Vidyapeeth High School",
       year: "2018 – 2019",
-      detail: "Computer Science",
+      detail: "CBSE Board ",
     },
     {
       level: "Bachelor's Degree",
