@@ -10,15 +10,15 @@ function Education() {
     },
     {
       level: "12th",
-      place: "ABC Matriculation School",
+      place: "Bharati Vidyapeeth High School",
       year: "2018 – 2019",
       detail: "Computer Science",
     },
     {
-      level: "Undergraduate",
-      place: "XYZ Engineering College",
+      level: "Bachelor's Degree",
+      place: "PSNA College of Engineering and Technology",
       year: "2019 – 2023",
-      detail: "B.Tech – Computer Science",
+      detail: "B.Tech – Information Technology",
     },
   ];
 

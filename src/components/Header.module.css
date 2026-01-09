@@ -1,6 +1,6 @@
 .header {
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 65px;
 }
 
 .name {
@@ -12,12 +12,19 @@
 
 .title {
   margin-top: 8px;
-  font-size:clamp(0.95rem, 3vw, 1.05rem);
+  font-size: clamp(0.95rem, 3vw, 1.05rem);
   font-weight: 700;
-  color: #343539; /* cool gray */
+  color: #343539;
+  transition: opacity 0.5s ease;
+  opacity: 1;
 }
-.subtitle{
-  margin-top: 4px;
-  font-size:clamp(0.85rem, 2.5vw, 0.95rem);
-  color: #6b7280; /* warm gray */
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
