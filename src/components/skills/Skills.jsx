@@ -7,15 +7,17 @@ import pythonIcon from "../../assets/skills/python.png";
 import drupalIcon from "../../assets/skills/drupal.png";
 import phpIcon from "../../assets/skills/php.png";
 import acquiaIcon from "../../assets/skills/acquia.png";
+import gitIcon from "../../assets/skills/git.png";
 
 function Skills() {
   const skills = [
     { name: "Web Development(HTML,CSS & JS)", icon: webIcon, level: 85 },
-    { name: "React", icon: reactIcon, level: 80 },
+    { name: "React", icon: reactIcon, level: 70 },
     { name: "Python", icon: pythonIcon, level: 75 },
-    { name: "Drupal", icon: drupalIcon, level: 70 },
+    { name: "Drupal", icon: drupalIcon, level: 90 },
     { name: "PHP", icon: phpIcon, level: 65 },
     { name: "Acquia Cloud", icon: acquiaIcon, level: 90 },
+    { name: "Git", icon: gitIcon, level: 65 },
   ];
 
   return (
