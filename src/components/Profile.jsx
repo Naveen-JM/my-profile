@@ -22,7 +22,7 @@ function Profile() {
         </div>
         <div className={styles.row}>
           <span className={styles.label}>Contact</span>
-          <span className={styles.value}>7021317959</span>
+          <span className={styles.value}>+91 7021317959</span>
         </div>
         <div className={styles.row}>
           <span className={styles.label}>Location</span>
