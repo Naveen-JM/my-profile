@@ -3,13 +3,14 @@ import Header from "./Components/Header.jsx";
 import Profile from "./components/Profile.jsx";
 import Skills from "./components/skills/Skills.jsx";
 import Education from "./components/education/Education.jsx";
-
+import Experience from "./components/experience/Experience.jsx";
 function App() {
   return (
     <div className={styles.app}>
       <Header />
       <Profile />
       <Education />
+      <Experience />
       <Skills />
     </div>
   );

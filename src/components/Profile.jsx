@@ -4,6 +4,7 @@ import profileImage from "../assets/profile.jpg";
 function Profile() {
   return (
     <section className={styles.card}>
+      <div className={styles.accent} />
       {/* Photo first */}
       <div className={styles.photo}>
         <img src={profileImage} alt="Profile" />

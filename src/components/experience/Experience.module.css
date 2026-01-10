@@ -1,0 +1,156 @@
+.experience {
+  margin-top: 50px;
+  padding: 0 16px;
+}
+.heading {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 48px;
+  color: #e5e7eb;
+}
+.card {
+  position: relative;
+  max-width: 1100px; /* Match profile width */
+  margin: 0 auto;
+  background: linear-gradient(180deg, #0f172a, #0b1120);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 48px rgba(56, 189, 248, 0.18),
+    0 16px 36px rgba(99, 102, 241, 0.15); /* Match profile shadow */
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.8s ease forwards; /* Entry animation */
+}
+.accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, #38bdf8, #6366f1); /* Accent strip gradient */
+}
+.content {
+  padding: 36px 44px;
+  color: #e5e7eb;
+  transition: transform 0.35s ease;
+}
+.card:hover .content {
+  transform: translateY(-4px); /* Inner hover interaction */
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.role {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.company {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.duration {
+  font-size: 0.85rem;
+  color: #c7d2fe;
+  white-space: nowrap; /* Prevent line break */
+}
+.logoWrap {
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s ease;
+}
+.card:hover .logoWrap {
+  transform: translateY(-2px); /* Logo hover effect */
+}
+.logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+.summary {
+  margin: 22px 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+.points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.points li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  transition: transform 0.3s ease;
+}
+.card:hover .points li {
+  transform: translateX(2px); /* Bullet points hover effect */
+}
+.points li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #38bdf8; /* Bullet point color */
+}
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tech span {
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 999px; /* Pill shape */
+  background: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  transition: background 0.3s ease;
+}
+.card:hover .tech span {
+  background: rgba(255, 255, 255, 0.12); /* Tech pill hover effect */
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .content {
+    padding: 28px 24px;
+  }
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .right {
+    align-items: flex-start;
+  }
+}
