@@ -44,6 +44,7 @@
 .photo {
   width: 190px;
   height: 190px;
+  border: 2px solid transparent;
   border-radius: 50%;
   overflow: hidden;
   background-color: #f3f4f6;
@@ -52,7 +53,7 @@
 }
 .photo:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .photo img {
