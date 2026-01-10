@@ -17,8 +17,8 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow:
-    0 24px 48px rgba(56, 189, 248, 0.18),
-    0 16px 36px rgba(99, 102, 241, 0.15); /* Match profile shadow */
+    0 24px 48px rgba(56, 189, 248, 0.10),
+    0 16px 36px rgba(99, 102, 241, 0.08); /* Match profile shadow */
   opacity: 0;
   transform: translateY(16px);
   animation: fadeUp 0.8s ease forwards; /* Entry animation */

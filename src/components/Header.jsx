@@ -27,7 +27,7 @@ function Header() {
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header id="header" className={styles.header}>
       <h1 className={styles.name}>Naveen Janardhanan Murugan</h1>
       <p className={`${styles.title} ${fadeProp}`} key={index}>
         {titles[index]}

@@ -8,7 +8,7 @@
 
 .heading {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.40rem;
   font-weight: 600;
   margin-bottom: 40px;
   color: #e5e7eb;
@@ -23,7 +23,8 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  grid-row-gap: 32px;
+  grid-column-gap: 24px;
 }
 
 /* ===============================

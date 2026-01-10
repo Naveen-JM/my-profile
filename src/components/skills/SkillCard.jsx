@@ -2,7 +2,7 @@ import styles from "./SkillCard.module.css";
 
 function SkillCard({ name, icon, level }) {
   return (
-    <div className={styles.card}>
+    <div id="skills" className={styles.card}>
       <img src={icon} alt={name} className={styles.icon} />
 
       <span className={styles.name}>{name}</span>

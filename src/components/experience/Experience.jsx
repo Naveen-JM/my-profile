@@ -3,7 +3,7 @@ import hexawareLogo from "../../assets/hexaware.png";
 
 function Experience() {
   return (
-    <section className={styles.experience}>
+    <section id="experience" className={styles.experience}>
       <h3 className={styles.heading}>Experience</h3>
 
       <div className={styles.card}>

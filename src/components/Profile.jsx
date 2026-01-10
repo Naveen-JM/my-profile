@@ -3,7 +3,7 @@ import profileImage from "../assets/profile.jpg";
 
 function Profile() {
   return (
-    <section className={styles.card}>
+    <section id="profile" className={styles.card}>
       <div className={styles.accent} />
       {/* Photo first */}
       <div className={styles.photo}>

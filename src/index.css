@@ -14,5 +14,14 @@ body {
       );
   
     color: #e5e7eb;
+    
+  }
+  section,header{
+    scroll-margin-top: 76px;
   }
   
+  @media(max-width:768px){
+    section,header{
+      scroll-margin-top: 56px;
+    }
+  }
