@@ -1,6 +1,4 @@
-/* ===============================
-   PROFILE CARD
-================================ */
+/* Profile card */
 .card {
   position: relative;
 
@@ -22,7 +20,6 @@
 
   border-radius: 18px;
 
-  /* PERMANENT elevation */
   transform: translateY(-6px);
 
   box-shadow:
@@ -30,10 +27,7 @@
     0 16px 36px rgba(99, 102, 241, 0.15);
 }
 
-
-/* ===============================
-   ACCENT STRIP
-================================ */
+/* Accent strip */
 .accent {
   position: absolute;
   left: 0;
@@ -51,9 +45,7 @@
   border-radius: 6px 0 0 6px;
 }
 
-/* ===============================
-   PHOTO
-================================ */
+/* Photo */
 .photo {
   width: 180px;
   height: 180px;
@@ -69,7 +61,7 @@
     box-shadow 0.35s ease;
 }
 
-/* photo hover — same feel as card */
+/* Photo hover */
 .card:hover .photo {
   transform: translateY(-4px);
   box-shadow:
@@ -83,9 +75,7 @@
   object-fit: cover;
 }
 
-/* ===============================
-   DETAILS
-================================ */
+/* Details */
 .details {
   display: flex;
   flex-direction: column;
@@ -113,9 +103,7 @@
   color: #e5e7eb;
 }
 
-/* ===============================
-   BIO
-================================ */
+/* Bio */
 .bio {
   max-width: 520px;
 
@@ -126,9 +114,7 @@
   text-align: justify;
 }
 
-/* ===============================
-   TABLET & UP
-================================ */
+/* Tablet (768px–1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .card {
     display: grid;
@@ -139,7 +125,6 @@
     align-items: start;
     margin-left: 16px;
     margin-right: 16px;
-    /* gap: 32px; */
   }
 
   .photo {
@@ -156,6 +141,8 @@
     max-width: 100%;
   }
 }
+
+/* Desktop (1024px and up) */
 @media (min-width: 1024px) {
   .card {
     display: flex;
@@ -173,14 +160,9 @@
   }
 }
 
-
-
-/* ===============================
-   MOBILE
-================================ */
+/* Mobile (up to 600px) */
 @media (max-width: 600px) {
   .card {
-    /* padding: 32px 24px; */
     margin-left: 16px;
     margin-right: 16px;
   }
