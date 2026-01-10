@@ -1,25 +1,45 @@
+/* ===============================
+   SKILLS SECTION
+================================ */
 .skills {
-    margin-top: 80px;
-    padding: 0 16px;
-  }
-  
-  .heading {
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 32px;
-    color: #111827;
-  }
-  
- /*default tab and bigscreen*/ 
+  margin-top: 80px;
+  padding: 0 16px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #e5e7eb;
+}
+
+/* ===============================
+   GRID (MOBILE FIRST)
+================================ */
+.grid {
+  max-width: 1040px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* ===============================
+   TABLET
+================================ */
+@media (min-width: 768px) {
   .grid {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
   }
-  /*mobile*/
-  @media(max-width: 600px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
+}
+
+/* ===============================
+   LAPTOP & DESKTOP
+================================ */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
