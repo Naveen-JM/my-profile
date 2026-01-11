@@ -6,7 +6,7 @@ import Education from "./components/education/Education.jsx";
 import Experience from "./components/experience/Experience.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Projects from "./components/projects/projects.jsx";
+import Projects from "./components/projects/Projects.jsx";
 function App() {
   return (
     <div className={styles.app}>
