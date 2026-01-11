@@ -1,0 +1,95 @@
+.card {
+    position: relative;
+    background: linear-gradient(135deg, #0f172a, #111827);
+    border-radius: 20px;
+    overflow: hidden;
+  
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.18);
+  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 30px 60px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* accent strip */
+  .accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      #38bdf8,
+      #6366f1
+    );
+  }
+  
+  /* content */
+  .content {
+    padding: 36px 40px;
+    color: #e5e7eb;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .summary {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #c7d2fe;
+  }
+  
+  .description {
+    margin-top: 14px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #d1d5db;
+  }
+  
+  /* tech pills */
+  .tech {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tech span {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #e5e7eb;
+  }
+  
+  /* link */
+  .link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #38bdf8;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* mobile */
+  @media (max-width: 600px) {
+    .content {
+      padding: 28px 24px;
+    }
+  }
+  

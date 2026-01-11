@@ -6,7 +6,7 @@ import Education from "./components/education/Education.jsx";
 import Experience from "./components/experience/Experience.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
-
+import Projects from "./components/projects/projects.jsx";
 function App() {
   return (
     <div className={styles.app}>
@@ -16,6 +16,7 @@ function App() {
       <Education />
       <Experience />
       <Skills />
+      <Projects />
       <Footer />
     </div>
   );
