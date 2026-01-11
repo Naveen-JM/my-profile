@@ -33,7 +33,7 @@ function Projects() {
   ];
 
   return (
-    <section className={styles.projects} id="projects">
+    <section id="projects" className={styles.projects} id="projects">
       <h3 className={styles.heading}>Projects</h3>
 
       <div className={styles.list}>

@@ -1,27 +1,39 @@
 /* Global background */
+html,
 body {
-    margin: 0;
-  
-    background: radial-gradient(
-        1200px 600px at top center,
-        #111827 0%,
-        transparent 60%
-      ),
-      linear-gradient(
-        180deg,
-        #0f172a 0%,
-        #020617 100%
-      );
-  
-    color: #e5e7eb;
-    
+  margin: 0;
+
+  background: radial-gradient(
+      1200px 600px at top center,
+      #111827 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #0f172a 0%,
+      #020617 100%
+    );
+
+  color: #e5e7eb;
+}
+
+#root {
+  min-height: 100vh;
+  background: inherit;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+section,
+header {
+  scroll-margin-top: 76px;
+}
+
+@media (max-width: 768px) {
+  section,
+  header {
+    scroll-margin-top: 56px;
   }
-  section,header{
-    scroll-margin-top: 76px;
-  }
-  
-  @media(max-width:768px){
-    section,header{
-      scroll-margin-top: 56px;
-    }
-  }
+}
