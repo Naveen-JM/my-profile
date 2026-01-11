@@ -19,7 +19,7 @@ function Navbar() {
           href="#top"
           onClick={closeNavbar}
         >
-          Naveen
+          Naveen Murugan
         </a>
 
         <button
@@ -44,6 +44,15 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className={styles.link}
+                href="#education"
+                onClick={closeNavbar}
+              >
+                Education
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className={styles.link}
                 href="#experience"
                 onClick={closeNavbar}
               >
@@ -53,15 +62,6 @@ function Navbar() {
             <li className="nav-item">
               <a className={styles.link} href="#skills" onClick={closeNavbar}>
                 Skills
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={styles.link}
-                href="#education"
-                onClick={closeNavbar}
-              >
-                Education
               </a>
             </li>
           </ul>
