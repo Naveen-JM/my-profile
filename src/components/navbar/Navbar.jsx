@@ -1,24 +1,22 @@
 import styles from "./Navbar.module.css";
-import { Collapse } from "bootstrap";
 
 function Navbar() {
-  const closeNavbar = () => {
-    const navbar = document.getElementById("mainNavbar");
-    if (navbar) {
-      const bsCollapse =
-        Collapse.getInstance(navbar) || new Collapse(navbar, { toggle: false });
-      bsCollapse.hide();
-    }
+  const handleNavClick = () => {
+    // Close navbar AFTER anchor navigation
+    setTimeout(() => {
+      const toggler = document.querySelector(".navbar-toggler");
+      const navbar = document.getElementById("mainNavbar");
+
+      if (toggler && navbar?.classList.contains("show")) {
+        toggler.click();
+      }
+    }, 0);
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
+    <nav className={`navbar navbar-expand-lg navbar-dark ${styles.navbar}`}>
       <div className="container-fluid">
-        <a
-          className={`navbar-brand ${styles.brand}`}
-          href="#top"
-          onClick={closeNavbar}
-        >
+        <a className={`navbar-brand ${styles.brand}`} href="#top">
           Naveen Murugan
         </a>
 
@@ -37,7 +35,11 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="mainNavbar">
           <ul className={`navbar-nav ms-auto ${styles.navList}`}>
             <li className="nav-item">
-              <a className={styles.link} href="#profile" onClick={closeNavbar}>
+              <a
+                className={styles.link}
+                href="#profile"
+                onClick={handleNavClick}
+              >
                 Profile
               </a>
             </li>
@@ -45,7 +47,7 @@ function Navbar() {
               <a
                 className={styles.link}
                 href="#education"
-                onClick={closeNavbar}
+                onClick={handleNavClick}
               >
                 Education
               </a>
@@ -54,13 +56,17 @@ function Navbar() {
               <a
                 className={styles.link}
                 href="#experience"
-                onClick={closeNavbar}
+                onClick={handleNavClick}
               >
                 Experience
               </a>
             </li>
             <li className="nav-item">
-              <a className={styles.link} href="#skills" onClick={closeNavbar}>
+              <a
+                className={styles.link}
+                href="#skills"
+                onClick={handleNavClick}
+              >
                 Skills
               </a>
             </li>
