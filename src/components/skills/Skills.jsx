@@ -11,9 +11,9 @@ import gitIcon from "../../assets/skills/git.png";
 
 function Skills() {
   const skills = [
-    { name: "Web Development(HTML,CSS & JS)", icon: webIcon, level: 85 },
+    { name: "Web Dev(HTML,CSS & JS)", icon: webIcon, level: 85 },
     { name: "React", icon: reactIcon, level: 70 },
-    { name: "Python", icon: pythonIcon, level: 75 },
+    { name: "Python & Django", icon: pythonIcon, level: 75 },
     { name: "Drupal", icon: drupalIcon, level: 90 },
     { name: "PHP", icon: phpIcon, level: 65 },
     { name: "Acquia Cloud", icon: acquiaIcon, level: 90 },
