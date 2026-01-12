@@ -30,7 +30,7 @@ function Experience() {
           </div>
 
           <p className={styles.summary}>
-            SUMMARY : Experienced in enterprise-scale CMS migration and upgrades
+            SUMMARY : Worked on enterprise-scale CMS migration and upgrades
             using Drupal and PHP, resolving client issues with custom
             development and module solutions.
           </p>
