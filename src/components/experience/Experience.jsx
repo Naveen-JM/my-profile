@@ -31,21 +31,28 @@ function Experience() {
 
           <p className={styles.summary}>
             SUMMARY : Working on enterprise-scale CMS migration and upgrade
-            projects using Drupal and PHP.
+            projects using Drupal and PHP and address client issues and provide
+            solutions through development and modules.
           </p>
 
           <ul className={styles.points}>
             <li>
               Contributed to large-scale platform migration from AWS to Acquia,
-              ensuring compatibility and stability across environments.
+              ensuring and testing the compatibility and stability across
+              environments.
             </li>
             <li>
-              Migrated content and functionality of from WordPress to Drupal,
-              focusing on data integrity and performance.
+              Migrated functionalities of enterprise-scale CMS from WordPress to
+              a Drupal site, focusing on Cost Efficiency and performance through
+              new contributed and custom modules.
             </li>
             <li>
               Performed Drupal version upgrades from Drupal 9 to Drupal 10,
-              addressing deprecated APIs and module compatibility.
+              addressing deprecated modules and PHP version compatibility.
+            </li>
+            <li>
+              Contributing in the SEO of the sites for better visibility in
+              Search Engines.
             </li>
           </ul>
 
