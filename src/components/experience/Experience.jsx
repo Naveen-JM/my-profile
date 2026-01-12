@@ -43,7 +43,7 @@ function Experience() {
             </li>
             <li>
               Migrated functionalities of enterprise-scale CMS from WordPress to
-              a Drupal site, focusing on Cost Efficiency and performance through
+              a Drupal site, focusing on cost efficiency and performance through
               new contributed and custom modules.
             </li>
             <li>
