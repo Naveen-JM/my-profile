@@ -69,7 +69,7 @@
   color: #ffffff;
 }
 
-/* Accent underline on hover */
+ Accent underline on hover
 .link::after {
   content: "";
   position: absolute;
@@ -86,7 +86,7 @@
   );
 
   transition: width 0.15s ease;
-}
+} 
 
 .link:hover::after {
   width: 100%;
