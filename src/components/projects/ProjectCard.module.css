@@ -1,20 +1,23 @@
 .card {
-    position: relative;
-    background: linear-gradient(135deg, #0f172a, #111827);
-    border-radius: 20px;
-    overflow: hidden;
-  
-    box-shadow:
-      0 20px 40px rgba(0, 0, 0, 0.18);
-  
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-6px);
-    box-shadow:
-      0 30px 60px rgba(0, 0, 0, 0.3);
-  }
+  position: relative;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 30px rgba(0, 0, 0, 0.18),
+    0 0 20px rgba(56, 189, 248, 0.15),
+    0 0 20px rgba(99, 102, 241, 0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}  
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(56, 189, 248, 0.25),
+    0 0 60px rgba(99, 102, 241, 0.25);
+}
   
   /* accent strip */
   .accent {

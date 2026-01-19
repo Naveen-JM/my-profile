@@ -79,6 +79,15 @@ function Navbar() {
                 Projects
               </a>
             </li>
+             <li className="nav-item">
+              <a
+                className={styles.link}
+                href="#certifications"
+                onClick={handleNavClick}
+              >
+                Certifications
+              </a>
+            </li>
           </ul>
         </div>
       </div>
