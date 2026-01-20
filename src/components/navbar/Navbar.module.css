@@ -16,11 +16,7 @@
    MOBILE COLLAPSE BACKGROUND
 ================================ */
 .navbar-collapse {
-  background: linear-gradient(
-    180deg,
-    #0f172a,
-    #0b1120
-  );
+  background: linear-gradient(180deg, #0f172a, #0b1120);
 
   padding: 16px 20px;
   border-radius: 0 0 16px 16px;
@@ -69,7 +65,7 @@
   color: #ffffff;
 }
 
- Accent underline on hover
+/* Accent underline on hover */
 .link::after {
   content: "";
   position: absolute;
@@ -79,17 +75,26 @@
   width: 0;
   height: 2px;
 
-  background: linear-gradient(
-    to right,
-    #38bdf8,
-    #6366f1
-  );
+  background: linear-gradient(to right, #38bdf8, #6366f1);
 
   transition: width 0.15s ease;
-} 
+}
 
 .link:hover::after {
   width: 100%;
+}
+
+/* ===============================
+   ACTIVE LINK STYLE
+================================ */
+.linkActive {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.linkActive::after {
+  width: 100%;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
 }
 
 /* ===============================

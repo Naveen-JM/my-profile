@@ -1,8 +1,40 @@
+import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
-  const handleNavClick = () => {
-    // Close navbar AFTER anchor navigation
+  const [activeSection, setActiveSection] = useState("header");
+
+  const sections = [
+    "header",
+    "profile",
+    "education",
+    "experience",
+    "skills",
+    "projects",
+    "certifications",
+  ];
+
+  const handleNavClick = (e) => {
+    e.preventDefault();
+
+    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const navbarHeight = document.querySelector(
+        `.${styles.navbar}`
+      ).offsetHeight;
+      const elementPosition =
+        targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+
+    // Close navbar after navigation
     setTimeout(() => {
       const toggler = document.querySelector(".navbar-toggler");
       const navbar = document.getElementById("mainNavbar");
@@ -10,13 +42,60 @@ function Navbar() {
       if (toggler && navbar?.classList.contains("show")) {
         toggler.click();
       }
-    }, 0);
+    }, 300);
   };
+
+  useEffect(() => {
+    const navbarHeight = document.querySelector(
+      `.${styles.navbar}`
+    ).offsetHeight;
+
+    const observerOptions = {
+      root: null,
+      rootMargin: `-${navbarHeight}px 0px 0px 0px`, // offset for sticky navbar
+      threshold: 0.5, // 50% of section visible
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, [sections, styles.navbar]);
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-dark ${styles.navbar}`}>
       <div className="container-fluid">
-        <a className={`navbar-brand ${styles.brand}`} href="#top">
+        <a
+          className={`${styles.brand} ${
+            activeSection === "header" ? styles.linkActive : ""
+          }`}
+          href="#header"
+          onClick={handleNavClick}
+        >
           Naveen Murugan
         </a>
 
@@ -34,60 +113,19 @@ function Navbar() {
 
         <div className="collapse navbar-collapse" id="mainNavbar">
           <ul className={`navbar-nav ms-auto ${styles.navList}`}>
-            <li className="nav-item">
-              <a
-                className={styles.link}
-                href="#profile"
-                onClick={handleNavClick}
-              >
-                Profile
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={styles.link}
-                href="#education"
-                onClick={handleNavClick}
-              >
-                Education
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={styles.link}
-                href="#experience"
-                onClick={handleNavClick}
-              >
-                Experience
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={styles.link}
-                href="#skills"
-                onClick={handleNavClick}
-              >
-                Skills
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className={styles.link}
-                href="#projects"
-                onClick={handleNavClick}
-              >
-                Projects
-              </a>
-            </li>
-             <li className="nav-item">
-              <a
-                className={styles.link}
-                href="#certifications"
-                onClick={handleNavClick}
-              >
-                Certifications
-              </a>
-            </li>
+            {sections.slice(1).map((sectionId) => (
+              <li className="nav-item" key={sectionId}>
+                <a
+                  className={`${styles.link} ${
+                    activeSection === sectionId ? styles.linkActive : ""
+                  }`}
+                  href={`#${sectionId}`}
+                  onClick={handleNavClick}
+                >
+                  {sectionId.charAt(0).toUpperCase() + sectionId.slice(1)}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

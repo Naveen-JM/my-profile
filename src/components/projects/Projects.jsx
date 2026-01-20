@@ -15,7 +15,7 @@ function Projects() {
     {
       title: "Personal Portfolio Website",
       summary:
-        "A responsive personal portfolio to showcase experience, skills, and projects.",
+        "A responsive personal portfolio to showcase experience, skills, projects and certifications",
       description:
         "Designed and developed a clean single-page application with modular components, smooth navigation, and consistent styling.",
       tech: ["React", "CSS Modules", "Bootstrap", "Vite"],
