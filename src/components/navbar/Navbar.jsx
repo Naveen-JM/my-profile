@@ -96,7 +96,7 @@ function Navbar() {
           href="#header"
           onClick={handleNavClick}
         >
-          Naveen Murugan
+          Naveen J Murugan
         </a>
 
         <button
