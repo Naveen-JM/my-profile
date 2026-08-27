@@ -1,30 +1,49 @@
 .header {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 64px;
+  padding: 48px 16px 40px;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  border-radius: 0; /* No card look */
+  box-shadow: none;
+  animation: headerFadeUp 0.8s ease forwards; /* Entry animation */
 }
-
 .name {
-  font-size:clamp(2rem, 5vw, 2.75rem);
-  font-weight: 700;
-  letter-spacing: -0.5px;
   margin: 0;
-}
-
-.title {
-  margin-top: 8px;
-  font-size: clamp(0.95rem, 3vw, 1.05rem);
+  font-size: clamp(2.1rem, 5vw, 2.8rem);
   font-weight: 700;
-  color: #343539;
-  transition: opacity 0.5s ease;
-  opacity: 1;
+  letter-spacing: -0.6px;
+  color: #ffffff;
 }
-
+.title {
+  margin-top: 10px;
+  font-size: clamp(0.95rem, 3vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #c7d2fe;
+}
 .fadeIn {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
-
 .fadeOut {
   opacity: 0;
   transition: opacity 0.5s ease;
+}
+/* Header entry animation */
+@keyframes headerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Mobile tuning */
+@media (max-width: 600px) {
+  .header {
+    padding: 40px 16px 32px;
+    margin-bottom: 48px;
+  }
 }

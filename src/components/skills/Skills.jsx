@@ -15,7 +15,7 @@ function Skills() {
     { name: "Web Development(HTML,CSS & JS)", icon: webIcon, level: 85 },
     { name: "Amazon web services", icon: awsIcon, level: 70 },
     { name: "React", icon: reactIcon, level: 70 },
-    { name: "Python", icon: pythonIcon, level: 75 },
+    { name: "Python & Django", icon: pythonIcon, level: 75 },
     { name: "Drupal", icon: drupalIcon, level: 90 },
     { name: "PHP", icon: phpIcon, level: 75 },
     { name: "Acquia Cloud", icon: acquiaIcon, level: 90 },

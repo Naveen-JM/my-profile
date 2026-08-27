@@ -23,7 +23,7 @@ function Education() {
   ];
 
   return (
-    <section className={styles.education}>
+    <section id="education" className={styles.education}>
       <h3 className={styles.heading}>Education</h3>
 
       <div className={styles.row}>

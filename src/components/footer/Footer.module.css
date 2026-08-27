@@ -1,0 +1,63 @@
+
+/* ===============================
+   FOOTER
+================================ */
+.footer {
+    margin-top: 100px;
+    padding: 32px 16px 40px;
+  
+    background: linear-gradient(
+      180deg,
+      #0b1120,
+      #020617
+    );
+  }
+  
+  /* ===============================
+     INNER WRAPPER
+  ================================ */
+  .inner {
+    max-width: 1040px;
+    margin: 0 auto;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  /* ===============================
+     LEFT
+  ================================ */
+  .name {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e5e7eb;
+  }
+  
+  .tagline {
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: #9ca3af;
+  }
+  
+  /* ===============================
+     RIGHT
+  ================================ */
+  .copy {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin: 0;
+  }
+  
+  /* ===============================
+     MOBILE
+  ================================ */
+  @media (max-width: 600px) {
+    .inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

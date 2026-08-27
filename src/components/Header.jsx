@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 const titles = [
   "Software Engineer",
   "Information Technology Graduate",
-  "Passionate",
+  "Passionate Technologist",
   "Tech Enthusiast",
   "Lifelong Learner",
 ];
@@ -14,20 +14,20 @@ function Header() {
   const [fadeProp, setFadeProp] = useState(styles.fadeIn);
 
   useEffect(() => {
-    const fadeTimeout = setInterval(() => {
+    const interval = setInterval(() => {
       setFadeProp(styles.fadeOut);
 
       setTimeout(() => {
         setIndex((prev) => (prev + 1) % titles.length);
         setFadeProp(styles.fadeIn);
-      }, 500); // match fadeOut duration
-    }, 2500); // total time per title
+      }, 500);
+    }, 2500);
 
-    return () => clearInterval(fadeTimeout);
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <header className={styles.header}>
+    <header id="header" className={styles.header}>
       <h1 className={styles.name}>Naveen Janardhanan Murugan</h1>
       <p className={`${styles.title} ${fadeProp}`} key={index}>
         {titles[index]}
