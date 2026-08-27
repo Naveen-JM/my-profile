@@ -1,5 +1,5 @@
 import styles from "./Profile.module.css";
-import profileImage from "../assets/profile.jpg";
+import profileImage from "../assets/profile-photo-casual.jpg";
 
 function Profile() {
   return (
