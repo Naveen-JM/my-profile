@@ -13,7 +13,7 @@ import awsIcon from "../../assets/skills/AWS.png";
 function Skills() {
   const skills = [
     { name: "Web Development(HTML,CSS & JS)", icon: webIcon, level: 85 },
-    { name: "AWS Cloud", icon: awsIcon, level: 70 },
+    { name: "Amazon web services", icon: awsIcon, level: 70 },
     { name: "React", icon: reactIcon, level: 70 },
     { name: "Python", icon: pythonIcon, level: 75 },
     { name: "Drupal", icon: drupalIcon, level: 90 },
